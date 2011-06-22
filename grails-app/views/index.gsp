@@ -1,10 +1,14 @@
 <%@ page import="com.spidasoftware.status.Connection" %>
 <html>
     <head>
-        <title>SPIDA Status</title>
+        <title>Status Checker</title>
         <meta name="layout" content="main" />
+	<g:javascript>
+		setTimeout("location.reload(true);",30000);
+	</g:javascript>
     </head>
     <body>
+	<em>Reloads every 30 seconds</em>
         <div class="nav">
             <span class="menuButton"><g:link class="create" action="create" controller="connection">Add Connection</g:link></span>
         </div>
