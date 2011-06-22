@@ -4,13 +4,17 @@ html * {
 }
 
 .up {
-  color:white;
   background-color:green;
 }
 
 .down {
-  color:white;
   background-color:red;
+}
+
+.down a:link, .down a:visited, .down a:hover, .up a:link, .up a:visited, .up a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color:white;
 }
 
 /* GENERAL */
@@ -22,7 +26,7 @@ html * {
 }
 
 body {
-    background: #fff;
+    background: #f4f4f4;
     color: #333;
     font: 11px verdana, arial, helvetica, sans-serif;
 }
@@ -31,9 +35,17 @@ body {
 }
 
 a:link, a:visited, a:hover {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+    color: black;
+}
+
+.maintitle {
+  font-size: 30px;
+  margin-left:40px
+}
+
+.maintitle a:link, .maintitle a:hover, .maintitle a:visited {
+  text-decoration: none;
+  color: #48802c;
 }
 
 h1 {

@@ -30,17 +30,6 @@ class ConnectionController {
         }
     }
 
-    def show = {
-        def connectionInstance = Connection.get(params.id)
-        if (!connectionInstance) {
-            flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'connection.label', default: 'Connection'), params.id])}"
-            redirect(uri:'/')
-        }
-        else {
-            [connectionInstance: connectionInstance]
-        }
-    }
-
     def edit = {
         def connectionInstance = Connection.get(params.id)
         if (!connectionInstance) {

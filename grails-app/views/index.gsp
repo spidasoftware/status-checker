@@ -5,7 +5,6 @@
         <meta name="layout" content="main" />
     </head>
     <body>
-      <h1>SPIDASoftware Status Update</h1>
         <div class="nav">
             <span class="menuButton"><g:link class="create" action="create" controller="connection">Add Connection</g:link></span>
         </div>

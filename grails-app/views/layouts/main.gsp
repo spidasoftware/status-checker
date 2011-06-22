@@ -8,9 +8,12 @@
         <g:javascript library="application" />
     </head>
     <body>
+      <div>
+        <h1 class="maintitle"><a href="${createLink(uri: '/')}">SPIDASoftware Status Update</a></h1>
         <div id="spinner" class="spinner" style="display:none;">
             <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
         </div>
         <g:layoutBody />
+      </div>
     </body>
 </html>
